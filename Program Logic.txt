@@ -1,0 +1,22 @@
+States:
+	Mating - Eaten 5 times to be triggered -> move towards nearest same animal to breed
+	Starving - Hasn't eaten for 10 time tics to be triggered -> loses 1 health a tic after (starts @ X health)
+
+Actors:
+	Wolf
+		1) Run from Shepard
+		2) Move towards Sheep
+		3) Eats a sheep sharing square
+
+	Sheep
+		1) Run from Wolf
+		2) Move towards Shepard & other Sheep
+		3) Eat grass sharing square
+
+	Shepard
+		1) Move towards Sheep
+		2) Circle Sheep
+		3) Attack Wolf eating Sheep
+
+	Grass
+		1) Grow back in 3 time tics
